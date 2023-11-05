@@ -1,0 +1,114 @@
+/* public/styles.css */
+
+/* General styling for the body */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #001F3F, #000000); /* Dark blue to black gradient */
+  color: #fff; /* Text color to white */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Styling for the main app container */
+#app {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #3498db, #9b59b6); /* Blue to purple gradient */
+  border-radius: 17px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Slight box shadow for elevation effect */
+  text-align: center; /* Center the content in the to-do list menu */
+}
+
+/* Styling for the main heading */
+h1 {
+  color: #ffffff; /* Heading color to white */
+}
+
+/* Styling for the input text field */
+input[type="text"] {
+  width: 80%; /* Adjusted width for better centering */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background for input */
+  color: #000; /* Input text color to black */
+  transition: border-color 0.3s ease, background-color 0.3s ease; /* Added transition for smoother changes */
+}
+
+/* Styling for the input text field on focus */
+input[type="text"]:focus {
+  border-color: #3498db; /* Border color on focus */
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly lighter background on focus */
+}
+
+/* Styling for the buttons */
+button {
+  background: linear-gradient(to right, #FF69B4, #9400D3); /* Pink to violet gradient */
+  color: white;
+  padding: 12px 16px; /* Increased padding for larger buttons */
+  border: none;
+  border-radius: 20px; /* Pill-shaped button */
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle box shadow for button */
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Adjusted transition properties */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background: linear-gradient(to right, #FF5733, #FFD700); /* Light red gradient on hover */
+  transform: scale(1.05); /* Slightly scale the button on hover */
+}
+
+/* Margin between buttons */
+button + button {
+  margin-left: 10px; /* Added margin between buttons */
+}
+
+/* Styling for the task list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px; /* Adjusted margin */
+}
+
+/* Styling for individual tasks */
+li {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for tasks */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 12px; /* Adjusted margin to add space between tasks and buttons */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Custom styles for the checkbox */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(2); /* Adjusted size for a bigger checkbox */
+}
+
+/* Styling for the task text */
+li span {
+  flex-grow: 1;
+}
+
+/* Strikethrough effect for completed tasks */
+input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  align-items: center;
+  color: #777676; /* Adjusted color for completed tasks */
+  filter: brightness(150%); /* Blue tint effect for checked boxes */
+}
