@@ -14,7 +14,7 @@ A simple To-Do List web application that allows users to add, complete, and dele
 
 ## Getting Started
 
-To use this calculator, simply git clone the repo link into your local machine. In the VSCode terminal enter navigate to its downnloaded directory using "cd .\To-Do-List-Project\" and then use command "node server.js". Finally hold CTRL + click on the http link to open the application. You can also clone this repository to your local machine and customize it further.
+To use this To-Do List application, simply git clone the repo link into your local machine. In the VSCode terminal enter navigate to its downnloaded directory using "cd .\To-Do-List-Project\" and then use command "node server.js". Finally hold CTRL + click on the http link to open the application. You can also clone this repository to your local machine and customize it further.
 
 ## How to Contribute
 
